@@ -1,0 +1,135 @@
+@font-face {
+	font-family: "NerdFont";
+	src: url("fonts/JetBrainsMonoNerdFont-Medium.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NerdFont";
+	src: url("fonts/JetBrainsMonoNerdFont-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NerdFont";
+	src: url("fonts/JetBrainsMonoNerdFont-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "NerdFont";
+	src: url("fonts/JetBrainsMonoNerdFont-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*Styles*/
+
+:root {
+  font-family: "NerdFont";
+  line-height: 1.5;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color:#1F1F28;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+.content {
+  max-width: 1280px;
+  font-size: 0.75vmax;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: #ffff;
+}
+
+button {
+  border-radius: 7px;
+  color:black;
+  border: 15px;
+  padding: 10px;
+  font-size: 25px;
+  font-family: "NerdFont";
+  background-color: #76946A;
+  box-shadow: 0 10px #647c5b;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  margin: 15px;
+  display: flex;
+  position: fixed;
+}
+button:hover {
+  background-color: #647c5b;
+  color:white;
+  margin-left: 35px;
+}
+
+.img {
+  max-width: 3%;
+  min-width: 1%;
+  justify-self: center;
+  align-self: center;
+}
+
+.space {
+  height: 5vh;
+  display: flex;
+}
+
+a {
+  text-decoration-color:#76946A;
+  text-decoration-thickness: 3px;
+  text-align: center;
+  color: #ffff;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration-color:#647c5b;
+  color:#76946A;
+}
+
+.hi {
+  position:fixed;
+  margin: 10px;
+  margin-top: 35px;
+  transition-duration: 0.3s;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.hi:active {
+  position:fixed;
+  margin-top: 100px;
+  color:#ffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffff;
+    background-color:#1F1F28;
+  }
+  button {
+    background-color: #76946A;
+  }
+}
